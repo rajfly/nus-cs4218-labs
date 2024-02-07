@@ -45,7 +45,8 @@ public class RepApplicationImpl implements RepApplication {
         }
 
         try {
-            IOUtils.write(result + System.lineSeparator(), this.out);
+//            IOUtils.write(result + System.lineSeparator(), this.out);
+            IOUtils.write(result, this.out);
         } catch (IOException e) {
             throw new RepException("Could not write to output stream", e);
         }

@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.OS;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -30,7 +32,43 @@ class RepArgsParserImplTest {
     }
 
     @Test
-    @EnabledOnOs({OS.LINUX, OS.WINDOWS, OS.MAC}) // Check for OS specific bugs
+    void parseAndValidate_WithInvalidFlag_ThrowsRepException() {
+        RepException ex = assertThrows(
+                RepException.class,
+                () -> parser.parseAndValidate(Arrays.asList("rep", "-l", "pattern", "replacement", "path"))
+        );
+        assertEquals("Invalid Flags", ex.getMessage());
+    }
+
+    // Bug in parseAndValidate: valid even without file path because of args.size() < 3 condition
+    @Test
+    void parseAndValidate_WithoutFilePath_ThrowsRepException() {
+        RepException ex = assertThrows(
+                RepException.class,
+                () -> parser.parseAndValidate(Arrays.asList("rep", "-c", "pattern", "replacement"))
+        );
+        assertEquals("Not Enough Arguments", ex.getMessage());
+    }
+
+    // Bug in parseAndValidate: patterns which start with "-" is automatically detected as flag
+    @ParameterizedTest
+    @ValueSource(strings = {"-", "-[", "["})
+    void parseAndValidate_ComplexPattern_ReturnsCorrectValue(String pattern) throws RepException {
+        parser.parseAndValidate(Arrays.asList("rep", "-c", pattern, "replacement"));
+        assertEquals(pattern, parser.getPattern());
+    }
+
+    // Bug in parseAndValidate: replacements which start with "-" is automatically detected as flag
+    @ParameterizedTest
+    @ValueSource(strings = {"-", "-[", "["})
+    void parseAndValidate_ComplexReplacement_ReturnsCorrectValue(String replacement) throws RepException {
+        parser.parseAndValidate(Arrays.asList("rep", "-c", "pattern", replacement));
+        assertEquals(replacement, parser.getReplacement());
+    }
+
+    // Check for OS specific bugs
+    @Test
+    @EnabledOnOs({OS.LINUX, OS.WINDOWS, OS.MAC})
     void parseAndValidate_EmptyString_ThrowsRepException() {
         assertThrows(RepException.class, () -> parser.parseAndValidate(Collections.emptyList()));
     }
