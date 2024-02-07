@@ -5,6 +5,8 @@ import cs4218.enums.REPLACE_MODE;
 import cs4218.exceptions.RepException;
 import cs4218.stubs.RepArgsParserStub;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -34,7 +36,7 @@ class RepApplicationImplTest {
     }
 
     @Test
-    @Disabled // Temporarily disabled failing test
+    @Disabled // Temporarily disabled failing test (find the bug in implementation)
     void run_SimpleValues_PrintsCorrectValues() throws RepException, IOException {
         // Given
         List<String> tokens = Arrays.asList("Hello", "abced", "hello-world.txt");
@@ -46,6 +48,13 @@ class RepApplicationImplTest {
 
         // Then
         assertEquals("abced World!", this.out.toString());
+    }
+
+    @Disabled
+    @ParameterizedTest // Try using @ParameterizedTest to find another bug (hint: regex)
+    @ValueSource(strings = {})
+    void run_ComplexPatternValuesInCharMode_PrintsCorrectValues(String pattern) {
+
     }
 
     @Test

@@ -3,10 +3,13 @@ package cs4218.impl.parsers;
 import cs4218.enums.REPLACE_MODE;
 import cs4218.exceptions.RepException;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.OS;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -27,6 +30,28 @@ class RepArgsParserImplTest {
         parser.parseAndValidate(Arrays.asList("rep", "-c", "pattern", "replacement", "path"));
 
         assertEquals(REPLACE_MODE.REPLACE_CHARACTERS, parser.getMode());
+    }
+
+    // Try asserting some exceptions
+    @Disabled
+    @Test
+    void parseAndValidate_WithInvalidFlag_ThrowsRepException() {
+
+    }
+
+    // Find the bug (hint: number of arguments)
+    @Disabled
+    @Test
+    void parseAndValidate_WithoutFilePath_ThrowsRepException() {
+
+    }
+
+    // Find the bug (hint: flag)
+    @Disabled
+    @ParameterizedTest
+    @ValueSource(strings = {})
+    void parseAndValidate_ComplexPattern_ReturnsCorrectValue(String pattern) throws RepException {
+
     }
 
     @Test
