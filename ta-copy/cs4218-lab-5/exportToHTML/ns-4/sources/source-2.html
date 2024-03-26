@@ -1,0 +1,242 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > RepApplicationImpl</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">cs4218.impl.apps</a>
+</div>
+
+<h1>Coverage Summary for Class: RepApplicationImpl (cs4218.impl.apps)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">RepApplicationImpl</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (5/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    97.3%
+  </span>
+  <span class="absValue">
+    (36/37)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">RepApplicationImpl$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (6/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (8/8)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    97.4%
+  </span>
+  <span class="absValue">
+    (37/38)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package cs4218.impl.apps;
+&nbsp;
+&nbsp;import cs4218.EnvironmentUtil;
+&nbsp;import cs4218.FileUtil;
+&nbsp;import cs4218.exceptions.RepException;
+&nbsp;import cs4218.interfaces.apps.RepApplication;
+&nbsp;import cs4218.interfaces.parsers.RepArgsParser;
+&nbsp;import org.apache.commons.io.IOUtils;
+&nbsp;
+&nbsp;import java.io.*;
+&nbsp;import java.nio.file.Path;
+&nbsp;import java.nio.file.Paths;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;public class RepApplicationImpl implements RepApplication {
+&nbsp;    private final RepArgsParser args;
+&nbsp;    private final InputStream in;
+&nbsp;    private final OutputStream out;
+&nbsp;    private final FileUtil fileUtil;
+&nbsp;
+<b class="fc">&nbsp;    public RepApplicationImpl(RepArgsParser args, InputStream in, OutputStream out, FileUtil fileUtil) {</b>
+<b class="fc">&nbsp;        this.args = args;</b>
+<b class="fc">&nbsp;        this.in = in;</b>
+<b class="fc">&nbsp;        this.out = out;</b>
+<b class="fc">&nbsp;        this.fileUtil = fileUtil;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void run(List&lt;String&gt; tokens) throws RepException {
+<b class="fc">&nbsp;        this.args.parseAndValidate(tokens);</b>
+&nbsp;
+<b class="fc">&nbsp;        String filePath = this.args.getFilePath();</b>
+<b class="fc">&nbsp;        String input = this.getInput(filePath, this.in);</b>
+<b class="fc">&nbsp;        String pattern = this.args.getPattern();</b>
+<b class="fc">&nbsp;        String replacement = this.args.getReplacement();</b>
+&nbsp;
+&nbsp;        String result;
+&nbsp;
+<b class="fc">&nbsp;        if (&quot;&quot;.equals(pattern)) {</b>
+<b class="fc">&nbsp;            result = input;</b>
+&nbsp;        } else {
+<b class="pc">&nbsp;            switch (this.args.getMode()) {</b>
+&nbsp;                case REPLACE_WORDS:
+<b class="fc">&nbsp;                    result = this.replaceWords(pattern, replacement, input);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case REPLACE_CHARACTERS:
+<b class="fc">&nbsp;                    result = this.replaceCharacters(pattern, replacement, input);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                default:
+<b class="nc">&nbsp;                    throw new RepException(&quot;Invalid Mode&quot;);</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        try {
+<b class="fc">&nbsp;            IOUtils.write(result, this.out);</b>
+<b class="fc">&nbsp;        } catch (IOException e) {</b>
+<b class="fc">&nbsp;            throw new RepException(&quot;Could not write to output stream&quot;, e);</b>
+<b class="fc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private String getInput(String filePath, InputStream in) throws RepException {
+&nbsp;        try {
+<b class="fc">&nbsp;            if (&quot;-&quot;.equals(filePath)) {</b>
+<b class="fc">&nbsp;                BufferedReader br = new BufferedReader(new InputStreamReader(in));</b>
+<b class="fc">&nbsp;                List&lt;String&gt; lines = new ArrayList&lt;&gt;();</b>
+&nbsp;                String line;
+<b class="fc">&nbsp;                while ((line = br.readLine()) != null) {</b>
+<b class="fc">&nbsp;                    lines.add(line);</b>
+&nbsp;                }
+<b class="fc">&nbsp;                br.close();</b>
+<b class="fc">&nbsp;                return String.join(System.lineSeparator(), lines);</b>
+&nbsp;            } else {
+<b class="fc">&nbsp;                Path currentDirectory = Paths.get(EnvironmentUtil.currentDirectory);</b>
+<b class="fc">&nbsp;                File file = currentDirectory.resolve(filePath).toFile();</b>
+<b class="fc">&nbsp;                return this.fileUtil.readFileToString(file);</b>
+&nbsp;            }
+<b class="fc">&nbsp;        } catch (IOException e) {</b>
+<b class="fc">&nbsp;            throw new RepException(&quot;Invalid file path provided&quot;, e);</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    private String replaceWords(String pattern, String replacement, String fileContents) {
+<b class="fc">&nbsp;        return fileContents.replaceAll(pattern, replacement);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    private String replaceCharacters(String pattern, String replacement, String fileContents) {
+<b class="fc">&nbsp;        String charSetRegex = String.format(&quot;[%s]&quot;, pattern);</b>
+<b class="fc">&nbsp;        return fileContents.replaceAll(charSetRegex, replacement);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-15 16:39</div>
+</div>
+</body>
+</html>

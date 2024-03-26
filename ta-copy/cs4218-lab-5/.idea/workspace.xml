@@ -4,13 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adb46bc2-742f-4460-8cf1-ff26e08ede29" name="Changes" comment="" />
+    <list default="true" id="adb46bc2-742f-4460-8cf1-ff26e08ede29" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs4218-lab-5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cs4218-lab-5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -23,53 +43,78 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2KzKBnXs6kvAwSJtdA6Cn77pnKy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/samfang/Repos/cs4218-lab-5/src/it/java/cs4218&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/samfang/Repos/cs4218-lab-5&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JAR Application.evosuite-standalone-runtime-1.2.0.jar.executor": "Run",
+    "JUnit.All Tests.executor": "Run",
+    "JUnit.All in cs4218-lab-5 (1).executor": "Run",
+    "JUnit.All in cs4218-lab-5 (2).executor": "Run",
+    "JUnit.All in cs4218-lab-5 (3).executor": "Run",
+    "JUnit.All in cs4218-lab-5 (4).executor": "Run",
+    "JUnit.All in cs4218-lab-5 (5).executor": "Run",
+    "JUnit.All in cs4218-lab-5.executor": "Run",
+    "JUnit.EchoApplicationImpl_ESTest (1).executor": "Run",
+    "JUnit.EchoApplicationImpl_ESTest.executor": "Run",
+    "JUnit.evosuite-tests in cs4218-lab-5 (1).executor": "Run",
+    "JUnit.evosuite-tests in cs4218-lab-5 (2).executor": "Run",
+    "JUnit.evosuite-tests in cs4218-lab-5.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Debug",
+    "Maven.cs4218-lab-5 [package].executor": "Run",
+    "Maven.cs4218-lab-5 [test-compile...].executor": "Run",
+    "PIT Runner.Mutation Tests.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Shell Script.randoop-single-class.sh.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/samfang/Repos/cs4218-lab-5/src/it/java/cs4218",
+    "last_opened_file_path": "/Users/rajdeep/Projects/nus-cs4218-labs/ta-copy/cs4218-lab-5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/cs4218" />
-      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/evosuite-tests/cs4218/impl/apps" />
+      <recent name="$PROJECT_DIR$/src/test/java/cs4218/impl/apps" />
+      <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="cs4218.app" />
@@ -95,67 +140,69 @@
       <recent name="cs4218.interfaces.parsers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.java in cs4218-lab-5">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cs4218.Main" />
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="java -Xmx3000m -classpath .\target\classes;randoop-all-4.3.2.jar randoop.main.Main gentests --testjar=target/cs4218-lab-5-1.0-SNAPSHOT.jar --output-limit=100 --junit-output-dir=src/test/java" />
+      <command value="java -Xmx3000m -classpath .\target\classes;randoop-all-4.3.2.jar randoop.main.Main gentests --testclass=cs4218.impl.apps.RepApplicationImpl --output-limit=100 --junit-output-dir=src/test/java --junit-package-name=cs4218.impl.apps" />
+      <command value="java -Xmx3000m -classpath .\target\classes:randoop-all-4.3.2.jar randoop.main.Main gentests --testclass=cs4218.impl.apps.RepApplicationImpl --output-limit=100 --junit-output-dir=src/test/java --junit-package-name=cs4218.impl.apps" />
+      <command value="java -Xmx3000m -classpath ./target/classes:randoop-all-4.3.2.jar randoop.main.Main gentests --testclass=cs4218.impl.apps.RepApplicationImpl --output-limit=100 --junit-output-dir=src/test/java --junit-package-name=cs4218.impl.apps" />
+      <command value="mvn package" />
+      <command value="java --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-exports=java.desktop/sun.font=ALL-UNNAMED --add-exports=java.desktop/com.apple.eawt=ALL-UNNAMED --add-exports=java.desktop/com.apple.laf=ALL-UNNAMED --add-exports=java.desktop/com.apple.eawt.event=ALL-UNNAMED -jar evosuite-1.2.0.jar -class cs4218.impl.apps.EchoApplicationImpl -projectCP target/classes" />
+      <command value="which java" />
+      <command value="java -jar evosuite.jar -help" />
+      <command value="java -jar evosuite-1.2.0.jar -help" />
+      <command value="mvn test-compile org.pitest:pitest-maven:mutationCoverage" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="All Tests" type="JUnit" factoryName="JUnit">
       <module name="cs4218-lab-5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs4218.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <extension name="coverage" sample_coverage="false" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShellIT.start_EchoPipeIntoRep_WritesToStdOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EchoApplicationImpl_ESTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cs4218-lab-5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cs4218.*" />
+          <option name="PATTERN" value="cs4218.impl.apps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cs4218" />
-      <option name="MAIN_CLASS_NAME" value="cs4218.ShellIT" />
-      <option name="METHOD_NAME" value="start_EchoPipeIntoRep_WritesToStdOut" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="cs4218.impl.apps" />
+      <option name="MAIN_CLASS_NAME" value="cs4218.impl.apps.EchoApplicationImpl_ESTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShellIT.start_Echo_WritesToStdOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cs4218-lab-5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cs4218.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cs4218" />
-      <option name="MAIN_CLASS_NAME" value="cs4218.ShellIT" />
-      <option name="METHOD_NAME" value="start_Echo_WritesToStdOut" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="java in cs4218-lab-5 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="evosuite-tests in cs4218-lab-5 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cs4218-lab-5" />
       <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java" />
+      <dir value="$PROJECT_DIR$/evosuite-tests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java in cs4218-lab-5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="evosuite-tests in cs4218-lab-5 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cs4218-lab-5" />
       <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/it/java" />
+      <dir value="$PROJECT_DIR$/src/evosuite-tests" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="evosuite-standalone-runtime-1.2.0.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/evosuite-standalone-runtime-1.2.0.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cs4218-lab-5/ta-copy/cs4218-lab-5/target/pit-reports/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="cs4218-lab-2" />
@@ -170,15 +217,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Mutation Tests" type="PIT" factoryName="PIT Runner" REPORT_DIR="$PROJECT_DIR$/target/report" SOURCE_DIRS="$PROJECT_DIR$/src/it/java" TARGET_CLASSES="cs4218.*" TARGET_TESTS="" otherParams="--outputFormats XML,HTML">
+      <module name="cs4218-lab-5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JAR Application.evosuite-standalone-runtime-1.2.0.jar" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JUnit.All Tests" />
+      <item itemvalue="JUnit.EchoApplicationImpl_ESTest" />
+      <item itemvalue="JUnit.evosuite-tests in cs4218-lab-5 (1)" />
+      <item itemvalue="JUnit.evosuite-tests in cs4218-lab-5 (2)" />
+      <item itemvalue="PIT Runner.Mutation Tests" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.java in cs4218-lab-5" />
-        <item itemvalue="JUnit.java in cs4218-lab-5 (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ShellIT.start_EchoPipeIntoRep_WritesToStdOut" />
-        <item itemvalue="JUnit.ShellIT.start_Echo_WritesToStdOut" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JUnit.evosuite-tests in cs4218-lab-5 (1)" />
+        <item itemvalue="JUnit.evosuite-tests in cs4218-lab-5 (2)" />
+        <item itemvalue="JUnit.EchoApplicationImpl_ESTest" />
+        <item itemvalue="JAR Application.evosuite-standalone-runtime-1.2.0.jar" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-396cc1b2" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-53826d6a" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -195,11 +266,27 @@
       <workItem from="1677575944718" duration="41000" />
       <workItem from="1677597362279" duration="11506000" />
       <workItem from="1677647710475" duration="43000" />
+      <workItem from="1709992790214" duration="97000" />
+      <workItem from="1709992894497" duration="234000" />
+      <workItem from="1709993224623" duration="1934000" />
+      <workItem from="1709997460118" duration="640000" />
+      <workItem from="1710226624170" duration="3181000" />
+      <workItem from="1710472991763" duration="3237000" />
+      <workItem from="1710488006650" duration="3489000" />
+      <workItem from="1710739521802" duration="197000" />
+      <workItem from="1710739726035" duration="2809000" />
+      <workItem from="1710743161833" duration="8577000" />
+      <workItem from="1710760400982" duration="27996000" />
+      <workItem from="1711075267700" duration="8000" />
+      <workItem from="1711084290504" duration="6474000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -216,5 +303,9 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cs4218_lab_5$All_Tests.ic" NAME="All Tests Coverage Results" MODIFIED="1710821145512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/cs4218_lab_5$All_Tests.exec" NAME="All Tests Coverage Results" MODIFIED="1710474131404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

@@ -9,8 +9,5 @@
         <module name="cs4218-lab-5" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cs4218-lab-5" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

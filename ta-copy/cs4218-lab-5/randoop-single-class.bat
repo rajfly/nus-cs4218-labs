@@ -1,0 +1,1 @@
+java -Xmx3000m -classpath .\target\classes;randoop-all-4.3.2.jar randoop.main.Main gentests --testclass=cs4218.impl.apps.RepApplicationImpl --output-limit=100 --junit-output-dir=src/test/java --junit-package-name=cs4218.impl.apps

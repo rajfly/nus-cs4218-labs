@@ -1,0 +1,1 @@
+java -Xmx3000m -classpath ./target/classes:randoop-all-4.3.2.jar randoop.main.Main gentests --testjar=target/cs4218-lab-5-1.0-SNAPSHOT.jar --output-limit=100 --junit-output-dir=src/test/java

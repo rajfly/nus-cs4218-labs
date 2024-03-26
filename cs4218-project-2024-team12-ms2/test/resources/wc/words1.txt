@@ -1,0 +1,4 @@
+This is a sample text file with
+4 lines,
+14 words,
+and 65 bytes.
