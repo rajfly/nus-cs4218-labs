@@ -1,3 +1,0 @@
-This is a sample text file with
-3 lines,
-14 words, and 65 bytes.
